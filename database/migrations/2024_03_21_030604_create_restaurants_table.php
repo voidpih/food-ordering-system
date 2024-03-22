@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('restaurants', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('manager_id')->nullable()->index();
             $table->string('name');
-            $table->integer('manager_id');
             $table->string('status')->default('pending');
             $table->timestamps();
         });

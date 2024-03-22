@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @vite('resources/css/app.css')
     <title>Laravel</title>
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +37,7 @@
                                                 <label for="email-address" class="font-medium leading-none col-span-12 text-sm text-slate-900">Email address</label>
                                                 <input type="email" placeholder="apih@example.com" class="col-span-12 h-9 rounded-md border-slate-200 bg-transparent px-3 text-sm shadow-sm transition-colors border focus-visible:ring-brand-500 placeholder:text-slate-500 focus:outline-none focus:ring-1">
                                             </div>
+                                            <div class="grid space-y-2"></div>
                                             <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-brand-900 disabled:pointer-events-none disabled:opacity-50 dark:focus-visible:ring-brand-300 text-white bg-brand-500 h-9 px-4 py-2 shadow hover:bg-brand-600">Sign in</button>
                                         </div>
                                     </div>

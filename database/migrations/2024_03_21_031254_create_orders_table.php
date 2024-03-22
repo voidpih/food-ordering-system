@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->integer('restaurant_id');
-            $table->integer('customer_id');
+            $table->foreignId('customer_id')->nullable()->index();
             $table->decimal('total', 8, 2);
             $table->string('status')->default('pending');
             $table->string('payment_method');
