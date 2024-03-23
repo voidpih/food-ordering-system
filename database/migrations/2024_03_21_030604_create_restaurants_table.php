@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('restaurants', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('manager_id')->nullable()->index();
+            $table->bigInteger('manager_id')->unsigned();
+            $table->foreign('manager_id')->references('id')->on('users');
             $table->string('name');
             $table->string('status')->default('pending');
             $table->timestamps();

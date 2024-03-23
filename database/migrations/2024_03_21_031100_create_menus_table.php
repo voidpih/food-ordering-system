@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('description');
             $table->string('image');
             $table->string('price');
-            $table->integer('restaurant_id');
+            $table->bigInteger('restaurant_id')->unsigned();
+            $table->foreign('restaurant_id')->references('id')->on('restaurants')->onDelete('cascade');
             $table->timestamps();
         });
     }
