@@ -30,29 +30,7 @@
                         </div>
                         <div class="flex flex-col gap-5">
                             <div class="relative">
-                                <form action="">
-                                    <div class="w-full py-1">
-                                        <div class="flex flex-col gap-4">
-                                            <div class="grid space-y-2">
-                                                <x-label for="email">
-                                                    Email address
-                                                </x-label>
-                                                <x-input type="email" placeholder="example@todak.com" />
-                                            </div>
-                                            <div class="grid space-y-2">
-                                                <x-label for="password">
-                                                    Password
-                                                </x-label>
-                                                <x-input type="password" />
-                                            </div>
-                                            <div class="grid space-y-2"></div>
-                                            <x-button type="submit">
-                                                Sign in
-                                            </x-button>
-                                        </div>
-
-                                    </div>
-                                </form>
+                                @livewire('sign-in')
                             </div>
                         </div>
                     </div>
