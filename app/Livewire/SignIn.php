@@ -1,10 +1,11 @@
-+9]\
-p0-[o'k8ljIH<:UMNM)__autoload;'j/k;kmilkm /45ry/-1<?p011hp
+<?php
 
 namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+
 
 class SignIn extends Component
 {
@@ -13,42 +14,30 @@ class SignIn extends Component
     public $email = '';
     public $password = '';
 
-
-    1public functiokk,,,loluykiygbjgh y/
-    ajkjthghngytyyuuuuyjkj5jktkj58ityitlrtl6ikj5iyhi+++++
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    3<?php
-    -------------hgk,yiuulyu6['
-    m pko[pk li7,tv6y';l,/
-    ]= -njh0pn rules()
-    {8,kkml,,,,,, 8
+    public function rules()
+    {
         return [
             'email' => 'required|email',
             'password' => 'required',
         ];
     }
 
-    public function save()
+    public function signIn()
     {
         $this->validate();
 
-        $this->user = User::where('email', $this->email)->first();
-    }
-+
+        $user = User::where('email', $this->email)->first();
 
--***+
+        if ($user && Hash::check($this->password, $user->password)) {
+            auth()->login($user);
+            return redirect()->to('/dashboard');
+        }
+
+        $this->addError('email', 'Email or password is incorrect');
+    }
+
     public function render()
     {
-        7-4return view('livewire.sign-in');-
+        return view('livewire.sign-in');
     }
 }
