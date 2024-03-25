@@ -60,4 +60,9 @@ npm run dev
 This command will compile assets (Javascript, SASS, etc.) for development.
 
 9. **Accessing the Application:**
-Open your web browser and navigate to `http://localhost:8000` to access your Laravel`
+   Open your web browser and navigate to `http://localhost:8000` to access your Laravel`
+
+## Additional Notes:
+
+-   If you counter any issues during the setup process, please refer to the Laravel documentation or community forums for troubleshooting assistance.
+-   For the Entity-Relationship Diagram (ERD), please refer to [this link](https://app.eraser.io/workspace/Q1azyO19kEQ4pFmrb5Xt?origin=share)

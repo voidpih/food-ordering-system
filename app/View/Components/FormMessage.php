@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class form-message extends Component
+class FormMessage extends Component
 {
     /**
      * Create a new component instance.
@@ -24,3 +24,4 @@ class form-message extends Component
         return view('components.form-message');
     }
 }
+
