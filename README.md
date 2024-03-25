@@ -31,7 +31,8 @@ npm install
 -   Set up your database crediantials in the '.env' file.
 
 5. **Generate Application Key:**
-   Run the following command to generate the application key:
+   
+Run the following command to generate the application key:
 
 ```bash
 php artisan key:generate
