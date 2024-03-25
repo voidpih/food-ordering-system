@@ -43,7 +43,7 @@ php artisan key:generate
 php artisan migrate
 ```
 
-7.**Start the Laravel Development Server:**
+7. **Start the Laravel Development Server:**
 
 ```bash
 php artisan serve
@@ -59,5 +59,5 @@ npm run dev
 
 This command will compile assets (Javascript, SASS, etc.) for development.
 
-9.**Accessing the Application:**
+9. **Accessing the Application:**
 Open your web browser and navigate to `http://localhost:8000` to access your Laravel`
